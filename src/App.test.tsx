@@ -20,3 +20,8 @@
       const headingElement = screen.getByText(/Vite \+ React/i); // Поиск текста с учетом регистра
       expect(headingElement).toBeInTheDocument();
     });
+
+    test('Counter', () => {
+      render(<App />);
+      const headingElement = screen.getByText(/Edit/i);
+    })
